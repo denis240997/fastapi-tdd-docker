@@ -42,6 +42,5 @@ async def generate_schema() -> None:
     await Tortoise.close_connections()
 
 
-# new
 if __name__ == "__main__":
     run_async(generate_schema())
