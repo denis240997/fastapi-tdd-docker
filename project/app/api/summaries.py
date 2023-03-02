@@ -26,3 +26,8 @@ async def read_summary(id: int) -> SummarySchema:
         raise HTTPException(status_code=404, detail="Summary not found")
 
     return summary
+
+
+@router.get("/", response_model=list[SummarySchema])
+async def read_all_summaries() -> list[SummarySchema]:
+    return await crud.get_all()
