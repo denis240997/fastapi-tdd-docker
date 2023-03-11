@@ -3,7 +3,7 @@ name: Continuous Integration and Delivery
 on: [push]
 
 env:
-  REGISTRY_ID: crpoelca98fh3k230tdm
+  REGISTRY_ID: crporigeql217qf736ej
   IMAGE: cr.yandex/${REGISTRY_ID}/summarizer
 
 jobs:
